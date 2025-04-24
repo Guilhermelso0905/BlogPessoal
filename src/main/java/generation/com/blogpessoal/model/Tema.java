@@ -26,7 +26,6 @@ public class Tema {
 
 	@NotBlank
 	@Size(min = 5, max = 200)
-
 	private String descricao;
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "tema", cascade = CascadeType.REMOVE)
